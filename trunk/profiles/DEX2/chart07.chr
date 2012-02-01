@@ -1,9 +1,9 @@
 <chart>
 symbol=USDCAD-Pro
 period=60
-leftpos=2609
+leftpos=5042
 digits=5
-scale=2
+scale=4
 graph=1
 fore=0
 grid=0

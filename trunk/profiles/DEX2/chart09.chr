@@ -1,7 +1,7 @@
 <chart>
 symbol=CADJPY-Pro
 period=60
-leftpos=2880
+leftpos=2929
 digits=3
 scale=4
 graph=1
@@ -146,7 +146,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325743200
+time_0=1327428000
 value_0=77.510000
 </object>
 <object>
@@ -172,7 +172,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325743200
+time_0=1327428000
 value_0=77.082840
 </object>
 <object>
@@ -198,7 +198,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325743200
+time_0=1327428000
 value_0=76.818580
 </object>
 <object>
@@ -224,7 +224,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325743200
+time_0=1327428000
 value_0=76.605000
 </object>
 <object>
@@ -250,7 +250,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325743200
+time_0=1327428000
 value_0=76.391420
 </object>
 <object>
@@ -276,7 +276,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325743200
+time_0=1327428000
 value_0=76.127160
 </object>
 <object>
@@ -313,7 +313,7 @@ weight=1
 background=1
 time_0=1327270500
 value_0=77.526290
-time_1=1327694400
+time_1=1328047380
 value_1=77.057500
 ray=0
 </object>
@@ -329,7 +329,7 @@ weight=1
 background=1
 time_0=1327270500
 value_0=77.148000
-time_1=1327694400
+time_1=1328047380
 value_1=76.834870
 ray=0
 </object>
@@ -345,7 +345,7 @@ weight=1
 background=1
 time_0=1327270500
 value_0=76.834870
-time_1=1327694400
+time_1=1328047380
 value_1=76.623100
 ray=0
 </object>
@@ -361,7 +361,7 @@ weight=1
 background=1
 time_0=1327270500
 value_0=76.623100
-time_1=1327694400
+time_1=1328047380
 value_1=76.509070
 ray=0
 </object>
@@ -377,7 +377,7 @@ weight=1
 background=1
 time_0=1327270500
 value_0=76.509070
-time_1=1327694400
+time_1=1328047380
 value_1=76.409520
 ray=0
 </object>
@@ -393,7 +393,7 @@ weight=1
 background=1
 time_0=1327270500
 value_0=76.409520
-time_1=1327694400
+time_1=1328047380
 value_1=76.277390
 ray=0
 </object>
@@ -409,7 +409,7 @@ weight=1
 background=1
 time_0=1327270500
 value_0=76.277390
-time_1=1327694400
+time_1=1328047380
 value_1=76.145260
 ray=0
 </object>

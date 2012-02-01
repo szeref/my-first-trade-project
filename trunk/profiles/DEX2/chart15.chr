@@ -1,7 +1,7 @@
 <chart>
 symbol=GBPJPY-Pro
 period=60
-leftpos=2613
+leftpos=2665
 digits=3
 scale=4
 graph=1
@@ -146,7 +146,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325732400
+time_0=1327428000
 value_0=121.319000
 </object>
 <object>
@@ -172,7 +172,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325732400
+time_0=1327428000
 value_0=120.924644
 </object>
 <object>
@@ -198,7 +198,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325732400
+time_0=1327428000
 value_0=120.680678
 </object>
 <object>
@@ -224,7 +224,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325732400
+time_0=1327428000
 value_0=120.483500
 </object>
 <object>
@@ -250,7 +250,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325732400
+time_0=1327428000
 value_0=120.286322
 </object>
 <object>
@@ -276,7 +276,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325732400
+time_0=1327428000
 value_0=120.042356
 </object>
 <object>
@@ -313,7 +313,7 @@ weight=1
 background=1
 time_0=1327377600
 value_0=121.334039
-time_1=1327694400
+time_1=1328047380
 value_1=120.901250
 ray=0
 </object>
@@ -329,7 +329,7 @@ weight=1
 background=1
 time_0=1327377600
 value_0=120.984800
-time_1=1327694400
+time_1=1328047380
 value_1=120.695717
 ray=0
 </object>
@@ -345,7 +345,7 @@ weight=1
 background=1
 time_0=1327377600
 value_0=120.695717
-time_1=1327694400
+time_1=1328047380
 value_1=120.500210
 ray=0
 </object>
@@ -361,7 +361,7 @@ weight=1
 background=1
 time_0=1327377600
 value_0=120.500210
-time_1=1327694400
+time_1=1328047380
 value_1=120.394937
 ray=0
 </object>
@@ -377,7 +377,7 @@ weight=1
 background=1
 time_0=1327377600
 value_0=120.394937
-time_1=1327694400
+time_1=1328047380
 value_1=120.303032
 ray=0
 </object>
@@ -393,7 +393,7 @@ weight=1
 background=1
 time_0=1327377600
 value_0=120.303032
-time_1=1327694400
+time_1=1328047380
 value_1=120.181049
 ray=0
 </object>
@@ -409,7 +409,7 @@ weight=1
 background=1
 time_0=1327377600
 value_0=120.181049
-time_1=1327694400
+time_1=1328047380
 value_1=120.059066
 ray=0
 </object>

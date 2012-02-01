@@ -1,9 +1,9 @@
 <chart>
 symbol=EURJPY-Pro
 period=60
-leftpos=2935
+leftpos=2638
 digits=3
-scale=4
+scale=2
 graph=1
 fore=0
 grid=0
@@ -146,7 +146,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325757600
+time_0=1326726000
 value_0=101.886000
 </object>
 <object>
@@ -172,7 +172,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325757600
+time_0=1326726000
 value_0=101.446096
 </object>
 <object>
@@ -198,7 +198,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325757600
+time_0=1326726000
 value_0=101.173952
 </object>
 <object>
@@ -224,7 +224,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325757600
+time_0=1326726000
 value_0=100.954000
 </object>
 <object>
@@ -250,7 +250,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325757600
+time_0=1326726000
 value_0=100.734048
 </object>
 <object>
@@ -276,7 +276,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325757600
+time_0=1326726000
 value_0=100.461904
 </object>
 <object>
@@ -313,7 +313,7 @@ weight=1
 background=1
 time_0=1327377600
 value_0=101.902776
-time_1=1327694400
+time_1=1328047380
 value_1=101.420000
 ray=0
 </object>
@@ -329,7 +329,7 @@ weight=1
 background=1
 time_0=1327377600
 value_0=101.513200
-time_1=1327694400
+time_1=1328047380
 value_1=101.190728
 ray=0
 </object>
@@ -345,7 +345,7 @@ weight=1
 background=1
 time_0=1327377600
 value_0=101.190728
-time_1=1327694400
+time_1=1328047380
 value_1=100.972640
 ray=0
 </object>
@@ -361,7 +361,7 @@ weight=1
 background=1
 time_0=1327377600
 value_0=100.972640
-time_1=1327694400
+time_1=1328047380
 value_1=100.855208
 ray=0
 </object>
@@ -377,7 +377,7 @@ weight=1
 background=1
 time_0=1327377600
 value_0=100.855208
-time_1=1327694400
+time_1=1328047380
 value_1=100.752688
 ray=0
 </object>
@@ -393,7 +393,7 @@ weight=1
 background=1
 time_0=1327377600
 value_0=100.752688
-time_1=1327694400
+time_1=1328047380
 value_1=100.616616
 ray=0
 </object>
@@ -409,7 +409,7 @@ weight=1
 background=1
 time_0=1327377600
 value_0=100.616616
-time_1=1327694400
+time_1=1328047380
 value_1=100.480544
 ray=0
 </object>
@@ -582,6 +582,31 @@ draw_3=2
 color_3=17919
 style_3=0
 weight_3=2
+period_flags=0
+show_data=1
+</indicator>
+<indicator>
+name=Custom Indicator
+<expert>
+name=DT_iMA_2
+flags=339
+window_num=0
+</expert>
+shift_0=0
+draw_0=0
+color_0=16711935
+style_0=0
+weight_0=2
+shift_1=0
+draw_1=0
+color_1=14772545
+style_1=0
+weight_1=2
+shift_2=0
+draw_2=0
+color_2=255
+style_2=0
+weight_2=2
 period_flags=0
 show_data=1
 </indicator>

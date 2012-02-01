@@ -1,7 +1,7 @@
 <chart>
 symbol=AUDCHF-Pro
 period=1440
-leftpos=1739
+leftpos=1737
 digits=5
 scale=4
 graph=1
@@ -146,7 +146,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1305590400
+time_0=1313107200
 value_0=0.984140
 </object>
 <object>
@@ -172,7 +172,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1305590400
+time_0=1313107200
 value_0=0.980711
 </object>
 <object>
@@ -198,7 +198,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1305590400
+time_0=1313107200
 value_0=0.978590
 </object>
 <object>
@@ -224,7 +224,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1305590400
+time_0=1313107200
 value_0=0.976875
 </object>
 <object>
@@ -250,7 +250,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1305590400
+time_0=1313107200
 value_0=0.975160
 </object>
 <object>
@@ -276,7 +276,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1305590400
+time_0=1313107200
 value_0=0.973039
 </object>
 <object>
@@ -313,7 +313,7 @@ weight=1
 background=1
 time_0=1327035600
 value_0=0.984271
-time_1=1325721600
+time_1=1327968000
 value_1=0.980507
 ray=0
 </object>
@@ -329,7 +329,7 @@ weight=1
 background=1
 time_0=1327035600
 value_0=0.981234
-time_1=1325721600
+time_1=1327968000
 value_1=0.978720
 ray=0
 </object>
@@ -345,7 +345,7 @@ weight=1
 background=1
 time_0=1327035600
 value_0=0.978720
-time_1=1325721600
+time_1=1327968000
 value_1=0.977020
 ray=0
 </object>
@@ -361,7 +361,7 @@ weight=1
 background=1
 time_0=1327035600
 value_0=0.977020
-time_1=1325721600
+time_1=1327968000
 value_1=0.976105
 ray=0
 </object>
@@ -377,7 +377,7 @@ weight=1
 background=1
 time_0=1327035600
 value_0=0.976105
-time_1=1325721600
+time_1=1327968000
 value_1=0.975306
 ray=0
 </object>
@@ -393,7 +393,7 @@ weight=1
 background=1
 time_0=1327035600
 value_0=0.975306
-time_1=1325721600
+time_1=1327968000
 value_1=0.974245
 ray=0
 </object>
@@ -409,7 +409,7 @@ weight=1
 background=1
 time_0=1327035600
 value_0=0.974245
-time_1=1325721600
+time_1=1327968000
 value_1=0.973184
 ray=0
 </object>

@@ -1,7 +1,7 @@
 <chart>
 symbol=NZDUSD-Pro
 period=60
-leftpos=2928
+leftpos=2980
 digits=5
 scale=4
 graph=1
@@ -146,7 +146,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325732400
+time_0=1327428000
 value_0=0.820980
 </object>
 <object>
@@ -172,7 +172,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325732400
+time_0=1327428000
 value_0=0.816996
 </object>
 <object>
@@ -198,7 +198,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325732400
+time_0=1327428000
 value_0=0.814532
 </object>
 <object>
@@ -224,7 +224,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325732400
+time_0=1327428000
 value_0=0.812540
 </object>
 <object>
@@ -250,7 +250,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325732400
+time_0=1327428000
 value_0=0.810548
 </object>
 <object>
@@ -276,7 +276,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325732400
+time_0=1327428000
 value_0=0.808084
 </object>
 <object>
@@ -313,7 +313,7 @@ weight=1
 background=1
 time_0=1327503600
 value_0=0.821132
-time_1=1327694400
+time_1=1328047380
 value_1=0.816760
 ray=0
 </object>
@@ -329,7 +329,7 @@ weight=1
 background=1
 time_0=1327503600
 value_0=0.817604
-time_1=1327694400
+time_1=1328047380
 value_1=0.814684
 ray=0
 </object>
@@ -345,7 +345,7 @@ weight=1
 background=1
 time_0=1327503600
 value_0=0.814684
-time_1=1327694400
+time_1=1328047380
 value_1=0.812709
 ray=0
 </object>
@@ -361,7 +361,7 @@ weight=1
 background=1
 time_0=1327503600
 value_0=0.812709
-time_1=1327694400
+time_1=1328047380
 value_1=0.811645
 ray=0
 </object>
@@ -377,7 +377,7 @@ weight=1
 background=1
 time_0=1327503600
 value_0=0.811645
-time_1=1327694400
+time_1=1328047380
 value_1=0.810717
 ray=0
 </object>
@@ -393,7 +393,7 @@ weight=1
 background=1
 time_0=1327503600
 value_0=0.810717
-time_1=1327694400
+time_1=1328047380
 value_1=0.809485
 ray=0
 </object>
@@ -409,7 +409,7 @@ weight=1
 background=1
 time_0=1327503600
 value_0=0.809485
-time_1=1327694400
+time_1=1328047380
 value_1=0.808252
 ray=0
 </object>

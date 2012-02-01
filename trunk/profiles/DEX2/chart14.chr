@@ -1,7 +1,7 @@
 <chart>
 symbol=EURGBP-Pro
 period=60
-leftpos=2928
+leftpos=2980
 digits=5
 scale=4
 graph=1
@@ -146,7 +146,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325732400
+time_0=1327312800
 value_0=0.838950
 </object>
 <object>
@@ -172,7 +172,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325732400
+time_0=1327312800
 value_0=0.836309
 </object>
 <object>
@@ -198,7 +198,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325732400
+time_0=1327312800
 value_0=0.834675
 </object>
 <object>
@@ -224,7 +224,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325732400
+time_0=1327312800
 value_0=0.833355
 </object>
 <object>
@@ -250,7 +250,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325732400
+time_0=1327312800
 value_0=0.832035
 </object>
 <object>
@@ -276,7 +276,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1325732400
+time_0=1327312800
 value_0=0.830401
 </object>
 <object>
@@ -313,7 +313,7 @@ weight=1
 background=1
 time_0=1327270500
 value_0=0.839051
-time_1=1327694400
+time_1=1328047380
 value_1=0.836152
 ray=0
 </object>
@@ -329,7 +329,7 @@ weight=1
 background=1
 time_0=1327270500
 value_0=0.836712
-time_1=1327694400
+time_1=1328047380
 value_1=0.834776
 ray=0
 </object>
@@ -345,7 +345,7 @@ weight=1
 background=1
 time_0=1327270500
 value_0=0.834776
-time_1=1327694400
+time_1=1328047380
 value_1=0.833467
 ray=0
 </object>
@@ -361,7 +361,7 @@ weight=1
 background=1
 time_0=1327270500
 value_0=0.833467
-time_1=1327694400
+time_1=1328047380
 value_1=0.832762
 ray=0
 </object>
@@ -377,7 +377,7 @@ weight=1
 background=1
 time_0=1327270500
 value_0=0.832762
-time_1=1327694400
+time_1=1328047380
 value_1=0.832146
 ray=0
 </object>
@@ -393,7 +393,7 @@ weight=1
 background=1
 time_0=1327270500
 value_0=0.832146
-time_1=1327694400
+time_1=1328047380
 value_1=0.831330
 ray=0
 </object>
@@ -409,7 +409,7 @@ weight=1
 background=1
 time_0=1327270500
 value_0=0.831330
-time_1=1327694400
+time_1=1328047380
 value_1=0.830513
 ray=0
 </object>
