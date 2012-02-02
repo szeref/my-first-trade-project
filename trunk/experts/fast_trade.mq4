@@ -14,11 +14,11 @@
 #define INTERVAL 20
 //#define OPEN_POS 0.00350
 //#define ENTER 0.00400
-#define OPEN_POS 0.00150
-#define ENTER 0.00200
+#define OPEN_POS 0.00250
+#define ENTER 0.00300
 #define TP 0.00060
 #define SL 0.00070
-#define POS_EXPIRE 600
+#define POS_EXPIRE 620
 #define LOTS 0.1
 
 double FT_SPREAD = 0.0;
@@ -47,12 +47,16 @@ int start(){
     lowest = getLowest(interval);
     highest = getHighest(interval);
     
-    if( h-lowest > OPEN_POS){
+    if( h-lowest > OPEN_POS && h-lowest < ENTER){
       Print(StringConcatenate("Open Fast Trade pos becouse: h:",h, " lowest: ",lowest, " Diff: ", h-lowest," bigger than ",OPEN_POS," interval: ",interval));
       order(OP_BUYSTOP, NormalizeDouble(lowest+ENTER+FT_SPREAD, Digits), NormalizeDouble(lowest+ENTER-SL, Digits), NormalizeDouble(lowest+ENTER+TP, Digits));
-    }else if(highest-l > OPEN_POS){
+      
+      ObjectSet("from", OBJPROP_PRICE1, lowest);
+    }else if(highest-l > OPEN_POS && highest-l < ENTER){
       Print(StringConcatenate("Open Fast Trade pos becouse: highest:",highest, " l: ",l, " Diff: ", highest-l," bigger than ",OPEN_POS," interval: ",interval));
-      order(OP_SELLSTOP, NormalizeDouble(highest-ENTER, Digits), NormalizeDouble(highest-ENTER+SL-FT_SPREAD, Digits), NormalizeDouble(highest-ENTER-TP-FT_SPREAD, Digits));
+      order(OP_SELLSTOP, NormalizeDouble(highest-ENTER, Digits), NormalizeDouble(highest-ENTER-TP-FT_SPREAD, Digits), NormalizeDouble(highest-ENTER+SL-FT_SPREAD, Digits));
+      
+      ObjectSet("from", OBJPROP_PRICE1, highest);
     }
   }
 
@@ -66,10 +70,10 @@ bool order(int type, double op, double sl, double tp){
   int i = 0, ticket;
   while(i < 3){
     ticket = OrderSend(Symbol(),type,0.1,op,5,sl,tp, ""+TimeCurrent(),1,TimeCurrent()+POS_EXPIRE);
+    
     ObjectSet("tp", OBJPROP_PRICE1, tp);
     ObjectSet("op", OBJPROP_PRICE1, op);
-    ObjectSet("sl", OBJPROP_PRICE1, sl);
-    
+    ObjectSet("sl", OBJPROP_PRICE1, sl);    
     
     if (ticket >=0){
       Print(StringConcatenate("Open nr: ",ticket," position at ", TimeToStr(TimeCurrent(),TIME_DATE|TIME_SECONDS), " type: ",type," lot: ",LOTS," OP: ",op, " SL: ",sl," TP: ",tp, " EXP: ",POS_EXPIRE," Bid: ",Bid," ASK: ",Ask));
@@ -77,6 +81,7 @@ bool order(int type, double op, double sl, double tp){
       break;
     }else{
       Print(StringConcatenate(i,". FAIL open position at ", TimeToStr(TimeCurrent(),TIME_DATE|TIME_SECONDS), " type: ",type," lot: ",LOTS," OP: ",op, " SL: ",sl," TP: ",tp, " EXP: ",POS_EXPIRE," Bid: ",Bid," ASK: ",Ask));
+      Alert(StringConcatenate("Open nr: ",ticket," position at ", TimeToStr(TimeCurrent(),TIME_DATE|TIME_SECONDS), " type: ",type," lot: ",LOTS," OP: ",op, " SL: ",sl," TP: ",tp, " EXP: ",POS_EXPIRE," Bid: ",Bid," ASK: ",Ask));
       errorCheck("Fast trade");
       i++;
       Sleep(1000);
