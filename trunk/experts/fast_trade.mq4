@@ -47,12 +47,12 @@ int start(){
     lowest = getLowest(interval);
     highest = getHighest(interval);
     
-    if( h-lowest > OPEN_POS && h-lowest < ENTER){
+    if( lowest+OPEN_POS < h && lowest+ENTER > h ){
       Print(StringConcatenate("Open Fast Trade pos becouse: h:",h, " lowest: ",lowest, " Diff: ", h-lowest," bigger than ",OPEN_POS," interval: ",interval));
       order(OP_BUYSTOP, NormalizeDouble(lowest+ENTER+FT_SPREAD, Digits), NormalizeDouble(lowest+ENTER-SL, Digits), NormalizeDouble(lowest+ENTER+TP, Digits));
       
       ObjectSet("from", OBJPROP_PRICE1, lowest);
-    }else if(highest-l > OPEN_POS && highest-l < ENTER){
+    }else if(highest-OPEN_POS > l && highest-ENTER < l){
       Print(StringConcatenate("Open Fast Trade pos becouse: highest:",highest, " l: ",l, " Diff: ", highest-l," bigger than ",OPEN_POS," interval: ",interval));
       order(OP_SELLSTOP, NormalizeDouble(highest-ENTER, Digits), NormalizeDouble(highest-ENTER-TP-FT_SPREAD, Digits), NormalizeDouble(highest-ENTER+SL-FT_SPREAD, Digits));
       

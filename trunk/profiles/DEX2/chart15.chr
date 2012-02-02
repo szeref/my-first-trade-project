@@ -146,7 +146,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1327428000
+time_0=1327518000
 value_0=121.319000
 </object>
 <object>
@@ -172,7 +172,7 @@ font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1327428000
+time_0=1327518000
 value_0=120.924644
 </object>
 <object>
@@ -192,13 +192,13 @@ type=21
 object_name=DT_GO_FiboLines_2_label
 period_flags=63
 create_time=1327411094
-description=221 pip  0.0 USD  0 HUF | 120.696
+description=221 pip  0.0 USD  0 HUF | 120.697
 color=16711680
 font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1327428000
+time_0=1327518000
 value_0=120.680678
 </object>
 <object>
@@ -218,13 +218,13 @@ type=21
 object_name=DT_GO_FiboLines_3_label
 period_flags=63
 create_time=1327411094
-description=418 pip  0.0 USD  0 HUF | 120.500
+description=418 pip  0.0 USD  0 HUF | 120.502
 color=9221330
 font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1327428000
+time_0=1327518000
 value_0=120.483500
 </object>
 <object>
@@ -244,13 +244,13 @@ type=21
 object_name=DT_GO_FiboLines_4_label
 period_flags=63
 create_time=1327411094
-description=615 pip  0.0 USD  0 HUF | 120.303
+description=615 pip  0.0 USD  0 HUF | 120.305
 color=9221330
 font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1327428000
+time_0=1327518000
 value_0=120.286322
 </object>
 <object>
@@ -270,13 +270,13 @@ type=21
 object_name=DT_GO_FiboLines_5_label
 period_flags=63
 create_time=1327411094
-description=859 pip  0.0 USD  0 HUF | 120.059
+description=859 pip  0.0 USD  0 HUF | 120.061
 color=9221330
 font=Arial
 fontsize=7
 angle=0
 background=0
-time_0=1327428000
+time_0=1327518000
 value_0=120.042356
 </object>
 <object>
@@ -313,7 +313,7 @@ weight=1
 background=1
 time_0=1327377600
 value_0=121.334039
-time_1=1328047380
+time_1=1328137380
 value_1=120.901250
 ray=0
 </object>
@@ -329,8 +329,8 @@ weight=1
 background=1
 time_0=1327377600
 value_0=120.984800
-time_1=1328047380
-value_1=120.695717
+time_1=1328137380
+value_1=120.697388
 ray=0
 </object>
 <object>
@@ -344,9 +344,9 @@ style=0
 weight=1
 background=1
 time_0=1327377600
-value_0=120.695717
-time_1=1328047380
-value_1=120.500210
+value_0=120.697388
+time_1=1328137380
+value_1=120.501881
 ray=0
 </object>
 <object>
@@ -360,9 +360,9 @@ style=0
 weight=1
 background=1
 time_0=1327377600
-value_0=120.500210
-time_1=1328047380
-value_1=120.394937
+value_0=120.501881
+time_1=1328137380
+value_1=120.396608
 ray=0
 </object>
 <object>
@@ -376,9 +376,9 @@ style=0
 weight=1
 background=1
 time_0=1327377600
-value_0=120.394937
-time_1=1328047380
-value_1=120.303032
+value_0=120.396608
+time_1=1328137380
+value_1=120.304703
 ray=0
 </object>
 <object>
@@ -392,9 +392,9 @@ style=0
 weight=1
 background=1
 time_0=1327377600
-value_0=120.303032
-time_1=1328047380
-value_1=120.181049
+value_0=120.304703
+time_1=1328137380
+value_1=120.182720
 ray=0
 </object>
 <object>
@@ -408,9 +408,9 @@ style=0
 weight=1
 background=1
 time_0=1327377600
-value_0=120.181049
-time_1=1328047380
-value_1=120.059066
+value_0=120.182720
+time_1=1328137380
+value_1=120.060737
 ray=0
 </object>
 <object>
