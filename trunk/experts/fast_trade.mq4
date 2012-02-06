@@ -14,8 +14,8 @@
 #define INTERVAL 20
 //#define OPEN_POS 0.00350
 //#define ENTER 0.00400
-#define OPEN_POS 0.00070
-#define ENTER 0.00120
+#define OPEN_POS 0.00250
+#define ENTER 0.00300
 #define TP 0.00060
 #define SL 0.00070
 
@@ -36,7 +36,7 @@ int start(){
   bool has_pos = selectFirstOpenPosition(Symbol());
   int last_pos_idx, interval;
   double lowest, highest, h, l;
-Alert(OrderTicket()+" zz "+OrderMagicNumber());
+//Alert(OrderTicket()+" zz "+OrderMagicNumber());
  
   if(!has_pos || OrderMagicNumber() != 11){
     h = iHigh( NULL, PERIOD_M1, 0);
@@ -49,11 +49,11 @@ Alert(OrderTicket()+" zz "+OrderMagicNumber());
       interval = INTERVAL;
     }
         
-    if(interval > 1){
+    if(interval != 0){
       lowest = getLowest(interval);
       highest = getHighest(interval);
          
-      Alert("interval:"+ interval+" lowest: "+lowest+" highest: "+highest+" dif(h-lowest): "+(h-lowest)+" dif(highest-l): "+(highest-l));
+      //Alert("interval:"+ interval+" lowest: "+lowest+" highest: "+highest+" dif(h-lowest): "+(h-lowest)+" dif(highest-l): "+(highest-l));
       if( lowest+OPEN_POS < h && lowest+ENTER > h ){
         Print(StringConcatenate("Open Fast Trade pos becouse: h:",h, " lowest: ",lowest, " Diff: ", h-lowest," bigger than ",OPEN_POS," interval: ",interval));
         order(OP_BUYSTOP, NormalizeDouble(lowest+ENTER+FT_SPREAD, Digits), NormalizeDouble(lowest+ENTER-SL, Digits), NormalizeDouble(lowest+ENTER+TP, Digits));
