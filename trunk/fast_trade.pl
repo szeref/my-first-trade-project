@@ -9,7 +9,7 @@ sub read_file{
 }
 
 sub start{
-  my @lines = read_file('g:/EURUSD-Pro4.csv');
+  my @lines = read_file('EURUSD-Pro1.csv');
   our @BAR;
 
   my $i;
@@ -39,12 +39,10 @@ sub start{
     $ENTER = $arr[0];
     $TP = $arr[1];
     $SL = $arr[2];
-    $INTERVAL = $arr[3];
   }else{
     $ENTER = 0.00450;
     $TP = $ENTER + 0.00030;
     $SL = $ENTER - 0.00040;
-    $INTERVAL = 3;
     
     # $ENTER = 0.00560;
     # $TP = 0.00590;
@@ -75,16 +73,11 @@ sub start{
     $tp_top  = $ENTER + 0.00080;
     while( $TP < $tp_top ){
       $sl_down = $ENTER - 0.00090;
-      
-      chomp($stdin = <>);
-      if($stdin eq 'save'){
-        print_res('>> result', $out);
-        print_res('> vars', $ENTER.';'.$TP.';'.$SL.';'.$INTERVAL);
-        return;
-      }
-    
       while( $SL > $sl_down ){
+            print_res('>> result', $out);
+            print_res('> vars', $ENTER.';'.$TP.';'.$SL);
         foreach $INTERVAL(3..25){
+            
           $in_position = 0;
           $succ = 0;
           $fail = 0;
@@ -212,19 +205,4 @@ sub getHighest{
   return $result;
 }
 
-use Tkx;
-$ooo = 0;
-
-sub iii{
-  # my $p;
-  # chomp($p = <STDIN>);  
-  # if($p ne 'xx'){ 
-    # print $ooo."\n";
-  # }else{ 
-    # print "yea!";
-  # }
-  Tkx::after(200, sub {iii()});
-}
-iii();
-Tkx::MainLoop();
-# start();
+start();
