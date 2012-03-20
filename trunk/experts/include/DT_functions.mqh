@@ -126,7 +126,7 @@ int getObjectNr(string filter, string type = "BO"){
 
 bool selectFirstOpenPosition(string symb){
   for (int i = 0; i < OrdersTotal(); i++) {      
-    if (OrderSelect(i, SELECT_BY_POS)) {        
+    if (OrderSelect(i, SELECT_BY_POS, MODE_TRADES)) {        
       if (OrderSymbol() == symb) {
         return (true);        
       }

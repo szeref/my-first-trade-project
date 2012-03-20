@@ -71,6 +71,9 @@ bool updateTradeLines(){
 		return (false);
 	}
 	
+	if(ObjectFind("DT_GO_TradeLines_OP") != -1 || ObjectFind("DT_GO_TradeLines_TP") != -1 || ObjectFind("DT_GO_TradeLines_SL") != -1){
+		return (false);
+	}
 	string lot_str = getGlobal("LOT");
 	double lot = StrToDouble(lot);
 	string tmp;
