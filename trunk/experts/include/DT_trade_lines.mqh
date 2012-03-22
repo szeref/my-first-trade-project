@@ -18,10 +18,17 @@ bool initTradeLines(string isOn){
     return (false);
   }
   
-	double time1, time2;
-  double sl_price = getZigZag(12, 5, 3, 1, time1);
-  double tp_price = getZigZag(12, 5, 3, 0, time2);  
-  double open_price = tp_price+(sl_price-tp_price)/2;
+  double tp_price, sl_price, open_price;
+  if( selectFirstOpenPosition(Symbol()) && OrderMagicNumber() == 555 ){
+    tp_price = OrderTakeProfit();
+    sl_price = OrderStopLoss();
+    open_price = OrderOpenPrice();
+  }else{
+    double time1, time2;
+    tp_price = getZigZag(12, 5, 3, 1, time1);
+    sl_price = getZigZag(12, 5, 3, 0, time2);  
+    open_price = tp_price+(sl_price-tp_price)/2;
+  }
    
   createLines("DT_GO_TradeLines_OP", open_price, Black); 
   createLines("DT_GO_TradeLines_TP", tp_price, Blue);
@@ -41,6 +48,7 @@ bool startTradeLines(string isOn){
   }
 
 	if(isOn == "0"){return (false);}
+	
 	if(delayTimer(APP_ID_TRADE_LINES, 700)){return (false);}
 	
   updateTradeLines();
@@ -48,7 +56,7 @@ bool startTradeLines(string isOn){
 	int visible_bar = WindowFirstVisibleBar();
 	if(visible_bar != TRADE_LINE_VISIBLE_BAR){  
 		TRADE_LINE_VISIBLE_BAR = visible_bar;
-		double x = Time[visible_bar-(WindowBarsPerChart()/2)];
+		double x = Time[WindowBarsPerChart()/2];
 		ObjectSet("DT_GO_TradeLines_TP_label", OBJPROP_TIME1, x);
 		ObjectSet("DT_GO_TradeLines_SL_label", OBJPROP_TIME1, x);
 		ObjectSet("DT_GO_TradeLines_OP_label", OBJPROP_TIME1, x);
@@ -63,6 +71,10 @@ bool deInitTradeLines(){
 }
 
 bool updateTradeLines(){
+  if(ObjectFind("DT_GO_TradeLines_OP") == -1 || ObjectFind("DT_GO_TradeLines_TP") == -1 || ObjectFind("DT_GO_TradeLines_SL") == -1){
+		return (false);
+	}
+	
 	double op = ObjectGet("DT_GO_TradeLines_OP",OBJPROP_PRICE1);
 	double tp = ObjectGet("DT_GO_TradeLines_TP",OBJPROP_PRICE1);
 	double sl = ObjectGet("DT_GO_TradeLines_SL",OBJPROP_PRICE1);
@@ -71,9 +83,6 @@ bool updateTradeLines(){
 		return (false);
 	}
 	
-	if(ObjectFind("DT_GO_TradeLines_OP") != -1 || ObjectFind("DT_GO_TradeLines_TP") != -1 || ObjectFind("DT_GO_TradeLines_SL") != -1){
-		return (false);
-	}
 	string lot_str = getGlobal("LOT");
 	double lot = StrToDouble(lot);
 	string tmp;
@@ -93,7 +102,7 @@ bool updateTradeLines(){
 		tmp = getLineText(op,tp);
     ObjectSetText("DT_GO_TradeLines_TP_label", tmp, 7);
 		ObjectSetText("DT_GO_TradeLines_TP", tmp, 7);
-		ObjectSet("DT_GO_TradeLines_TP_label", OBJPROP_PRICE1, tp);
+		ObjectSet("DT_GO_TradeLines_TP_label", OBJPROP_PRICE1, tp);		 
 	}
 	
 	if(sl != TRADE_LINES_SL){
@@ -103,6 +112,7 @@ bool updateTradeLines(){
 		ObjectSetText("DT_GO_TradeLines_SL", tmp, 7);
 		ObjectSet("DT_GO_TradeLines_SL_label", OBJPROP_PRICE1, sl);
 	}
+	GetLastError();
 	return (errorCheck("updateTradeLines"));
 }
 
