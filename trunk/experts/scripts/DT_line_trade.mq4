@@ -56,8 +56,17 @@ int start(){
         addComment("Invalid order request!",1);
         return(0);
       }
-          
-      if(IDYES == MessageBox(StringConcatenate("Are you should want a  < ",o_text," >  trade with  < ",DoubleToStr(lots,2)," >  lots?"), "Line trading", MB_YESNO|MB_ICONQUESTION )){
+      
+      int res = MessageBox(StringConcatenate("Are you should want instant order or  < ",o_text," >  trade with  < ",DoubleToStr(lots,2)," >  lots?"), "Line trading", MB_YESNOCANCEL|MB_ICONQUESTION );    
+      if( res == IDYES ){
+        RefreshRates();
+        if(tp > op){          
+          OrderSend(Symbol(),OP_BUY,lots,Ask,20,sl,tp, ""+TimeCurrent(),555,0);
+        }else{         
+          OrderSend(Symbol(),OP_SELL,lots,Bid,20,sl,tp, ""+TimeCurrent(),555,0);
+        }        
+        errorCheck("Line Trade (new ins order) sl:"+sl+" tp:"+tp+" op:"+Ask);
+      }else if( res == IDNO ){
         OrderSend(Symbol(),o_type,lots,op,2,sl,tp, ""+TimeCurrent(),555,0);
         errorCheck("Line Trade (new order)");
       }
