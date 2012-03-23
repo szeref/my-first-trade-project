@@ -59,13 +59,19 @@ int start(){
       
       int res = MessageBox(StringConcatenate("Are you should want instant order or  < ",o_text," >  trade with  < ",DoubleToStr(lots,2)," >  lots?"), "Line trading", MB_YESNOCANCEL|MB_ICONQUESTION );    
       if( res == IDYES ){
+        int ticket;
         RefreshRates();
+        
         if(tp > op){          
-          OrderSend(Symbol(),OP_BUY,lots,Ask,20,sl,tp, ""+TimeCurrent(),555,0);
+          ticket = OrderSend(Symbol(), OP_BUY, lots, Ask, 3, 0, 0, ""+TimeCurrent(), 555);
+          OrderSelect(ticket, SELECT_BY_TICKET);
+          OrderModify(OrderTicket(), OrderOpenPrice(), sl, tp, 0);         
         }else{         
-          OrderSend(Symbol(),OP_SELL,lots,Bid,20,sl,tp, ""+TimeCurrent(),555,0);
+          ticket = OrderSend(Symbol(), OP_SELL, lots, Bid, 3, 0, 0, ""+TimeCurrent(), 555);
+          OrderSelect(ticket, SELECT_BY_TICKET);
+          OrderModify(OrderTicket(), OrderOpenPrice(), sl, tp, 0);          
         }        
-        errorCheck("Line Trade (new ins order) sl:"+sl+" tp:"+tp+" op:"+Ask);
+        errorCheck("Line Trade (new ins order) sl:"+sl+" tp:"+tp);
       }else if( res == IDNO ){
         OrderSend(Symbol(),o_type,lots,op,2,sl,tp, ""+TimeCurrent(),555,0);
         errorCheck("Line Trade (new order)");
